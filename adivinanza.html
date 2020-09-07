@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adivinanza</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://kit.fontawesome.com/906bb78aae.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="images/rubi.png" type="image/x-icon">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header>
+        <h1 class="titulo text-center my-4">Mi tienda <span>MAKEUP</span></h1>
+        <br/>
+        <h5>Cuál es la base que se recomienda en pieles grasas o mixtas? 💡<span style="color: crimson;">(liquida - crema - barra - polvo)</span> Sólo tienes 4 intentos posibles.</h5>
+        <br>
+        <h5>En construcción 🚧⚙🛠</h5>
+    </header>
+    <br/>
+    <p><b>¿Cuál es tu nombre?</b><br/><br/><input type="text" id="nombre"></p>
+	<button onclick="jugar_ahora()">Jugar</button>
+	<script>
+		var cant_intentos = 4;
+		var acierto = false;
+		var respuesta;
+
+		if(nombre=="")
+        {
+			alert("Ingresa tu nombre para Jugar!");
+		}
+		else
+        {
+            while (cant_intentos>0 && acierto==false)
+            {
+                cant_intentos--;
+				respuesta = prompt("Ingrese tu respuesta");
+                if (respuesta == "liquida"||respuesta == "crema"||respuesta == "barra"||respuesta == "polvo")
+                {
+					alert("Felicidades, '"+respuesta+"' era la respuesta correcta");					
+					acierto=true;
+				}
+				else if (cant_intentos==3)
+				{
+					alert("Le quedan " + cant_intentos + " intentos");
+				}
+				else if (cant_intentos==2)
+				{
+					alert("Le quedan " + cant_intentos + " intentos");
+					alert("PISTA 1 - No es una base untuosa");
+				}
+				else if (cant_intentos==1)
+				{
+					alert("Le quedan " + cant_intentos + " intentos");
+					alert("PISTA 2 - Muy recomendable para usarla en verano por su liviandad");
+				}
+				else
+				{
+					alert("UFA! no ganaste ");
+				}
+            }
+        }
+    </script>
+    <footer class="container-fluid footer text-center pt-4 pb-4">
+        <div class="row">
+            <div class="col-md-12 pb-2">
+                <a href="https://www.instagram.com/wakeupandmakeup/" target="_blank"><i class="fab fa-instagram-square fa-2x" style="color:#4B0082;"></i></a>
+                <a href="https://www.facebook.com/OfficialMAKEUP/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4B0082;"></i></a>
+                <a href="https://ar.pinterest.com/AsLifeGrows/makeup/" target="_blank"><i class="fab fa-pinterest-square fa-2x" style="color:#4B0082;"></i></a>
+            </div>
+            <div class="col-md-12 pb-2">
+                <div class="container d-flex justify-content-center">
+                    <h6 class="text-center">©Mi tienda MAKEUP - CLIP <a style="text-decoration: none; color: crimson;" target="_blank" href="https://github.com/jesicaurey">Jesica Urey</a></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+<body>
+    
+</body>
+</html>

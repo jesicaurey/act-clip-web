@@ -1,0 +1,106 @@
+
+h1 {
+    text-align: center;
+}
+
+.titulo span {
+    color: indigo;
+}
+
+.nav-link {
+    color: black;
+}
+
+.navbar{
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.imagen-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagen-principal {
+    background-image: url(../images/brishitos.jpg);
+    height: 35rem;
+}
+
+.categorias a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    color: #4B0082;
+    font-size: 2.5rem;
+    
+}
+
+body {
+    overflow-x: hidden;
+}
+.nosotros {
+    background-color:#4B0082;
+}
+.img-nosotros {
+    background-image: url(../images/pinturita.jpg);
+    height: 22rem;
+}
+
+.seccion-productos {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.btn-succes {
+    background-color:#FDBF16;
+    color:#FFFFFF;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.footer {
+    background-color: #E1E1E1;
+}
+
+.seccion-tienda {
+    text-align: center;
+    color: #4B0082;
+}
+
+.info-producto {
+    background-color: indianred;
+}
+
+h3{
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+h5{
+    text-align: center;
+}
